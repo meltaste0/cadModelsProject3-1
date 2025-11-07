@@ -1,0 +1,6 @@
+* Read the CAD model (STL or PLY)
+read_object_model_3d ('your_cad_model.stl', 'mm', [], [], ObjectModel3D)
+
+* Optional: visualize it
+dev_open_window (0, 0, 800, 600, 'black', WindowID)
+visualize_object_model_3d (WindowID, [ObjectModel3D], [], ['color','green'])
